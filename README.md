@@ -9,7 +9,7 @@ This project pretends obtain detailed basketball match stats using the `.xml` fe
 
 1. Install prerequisites.
 ```
-conda install --yes --file requirements.txt
+conda install -c anaconda --yes --file requirements.txt
 ```
 
 
