@@ -1,6 +1,6 @@
 # Basketball Stats
 
-This project pretends obtain detailed basketball match stats using the `.xml` feeds provided by[My Sports Feeds](https://www.mysportsfeeds.com/).
+This project pretends obtain detailed basketball match stats using the `.xml` feeds provided by [My Sports Feeds](https://www.mysportsfeeds.com/).
 
 
 ## Getting Started
