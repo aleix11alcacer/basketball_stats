@@ -32,3 +32,7 @@ python app.py
 3. Select the desired player to get his shot chart.
 
 4. ENJOY!
+
+## Sample
+
+![NBA shot chart sample](samples/sample.png)
