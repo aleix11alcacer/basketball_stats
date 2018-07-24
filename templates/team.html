@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"></head>
+<body>
+
+ <div class="container">
+     <div class="row justify-content-center my-4">
+         <h1> NBA shot charts </h1>
+     </div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <form class="form-horizontal" action = "http://localhost:5000/" method = "post">
+ <div class="form-group">
+    <label for="team" class="col-4 control-label">Team</label>
+    <div class="col-12">
+      <select class="form-control" id="team" name="team">
+          {% for team in teams %}
+
+            <option> {{ team }} </option>
+
+          {% endfor %}
+
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="season" class="col-4 control-label">Season</label>
+    <div class="col-12">
+      <select class="form-control" id="season" name="season">
+          <option>2017-18</option>
+          <option>2016-17</option>
+          <option>2015-16</option>
+          <option>2014-15</option>
+          <option>2013-14</option>
+          <option>2012-13</option>
+          <option>2011-12</option>
+          <option>2010-11</option>
+          <option>2009-10</option>
+          <option>2008-09</option>
+          <option>2007-08</option>
+          <option>2006-07</option>
+          <option>2005-06</option>
+          <option>2004-05</option>
+          <option>2003-04</option>
+          <option>2002-03</option>
+          <option>2001-02</option>
+          <option>2000-01</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group text-center">
+      <input class="btn btn-default col-4" type="submit" value="Get players">
+  </div>
+
+</form>
+
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

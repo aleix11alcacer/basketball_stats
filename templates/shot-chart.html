@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"></head>
+<body>
+
+ <div class="container">
+
+<div class="row justify-content-center">
+    <div class="col-8">
+        <img style="width: 100%" src="data:image/png;base64, {{ plot_url }}">
+    </div>
+</div>
+
+     <div class="row justify-content-center">
+         <div class="col-4">
+        <form class="form-horizontal" action = "http://localhost:5000/shot-chart?season={{ season }}&player_id={{ player_id }}" method = "post">
+            <div class="form-group text-center">
+            <input class="btn btn-default col-12" type="submit" value="Go back">
+            </div>
+        </form>
+    </div>
+         <div class="col-4">
+
+         <a href="data:image/png;base64, {{ plot_url }}" download="{{ season }}_{{ player_id }}.png"> <input class="btn btn-default col-12" type="submit" value="Download"></a>
+         </div>
+</div>
+
+ </div>
+</body>
+
+</html>
